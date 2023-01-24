@@ -1,6 +1,13 @@
 # Project 101
-<img src="https://101-phi.vercel.app/101.png" width="250px" h="300px" />
-### Bu proje erc20, erc721 ve erc1155 standartlarını kullanarak bsc-testnet ağında deploy edilmiştir. <br/>
+---
+<img src="https://101-phi.vercel.app/101.png" width="250px" h="300px" /> <br/>
+---
+## Introduction
+### **101** is a platform where you can draw and publish your own nft.
+--- 
+## Getting Started
+---
+* Bu proje erc20, erc721 ve erc1155 standartlarını kullanarak bsc-testnet ağında deploy edilmiştir. <br/>
 #### Proje kullanım detayları aşşağıda belirtilmiştir.
 Projeyi denemeye **Faucet** sayfasından cüzdan adresinizi yazarak test tokenlarını cüzdana çekerek başlayabilirsiniz. <br/>
 **Paint** sayfasında bulunan kalem, silgi ve fırça itemlerini aldığınız test tokenlar ile satın alabilir ve ya altında bulunan tamamını satın alma butonu ile tüm itemleri satın alarak paint alanına kendi nft'nizi çizebilirsiniz.<br/>
