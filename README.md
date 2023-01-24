@@ -1,4 +1,5 @@
-# `<<<<< Project 101 >>>>>`
+# Project 101
+<img src="https://101-phi.vercel.app/101.png" width="auto" />
 ### Bu proje erc20, erc721 ve erc1155 standartlarını kullanarak bsc-testnet ağında deploy edilmiştir. <br/>
 #### Proje kullanım detayları aşşağıda belirtilmiştir.
 Projeyi denemeye **Faucet** sayfasından cüzdan adresinizi yazarak test tokenlarını cüzdana çekerek başlayabilirsiniz. <br/>
