@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import {
   IconButton,
   Box,
@@ -8,7 +8,6 @@ import {
   useColorModeValue,
   Drawer,
   DrawerContent,
-  Text,
   useDisclosure,
   Image,
   VStack,
@@ -16,6 +15,7 @@ import {
 import { FiHome, FiSettings, FiMenu } from 'react-icons/fi'
 import { FaFaucet, FaPaintBrush, FaShoppingBag } from 'react-icons/fa'
 import Link from 'next/link'
+
 const LinkItems = [
   { name: 'Home', link: '/', icon: FiHome },
   { name: 'Faucet', link: '/Faucet', icon: FaFaucet },
@@ -55,7 +55,7 @@ export default function SimpleSidebar({ children }: any) {
 const SidebarContent = ({ onClose, ...rest }: any) => {
   return (
     <VStack
-      bg={useColorModeValue('light.100', 'dark.500')}
+      bg={useColorModeValue('light.200', 'dark.500')}
       w={{ base: 'full', md: 60 }}
       pos="fixed"
       py={15}
@@ -127,7 +127,7 @@ const MobileNav = ({ onOpen, ...rest }: any) => {
       px={{ base: 4, md: 24 }}
       height="20"
       alignItems="center"
-      bg={useColorModeValue('light.100', 'dark.300')}
+      bg={useColorModeValue('light.200', 'dark.300')}
       borderBottomWidth="1px"
       borderBottomColor={useColorModeValue('gray.200', 'gray.700')}
       justifyContent="flex-start"

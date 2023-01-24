@@ -15,16 +15,20 @@ import {
   Center,
   Icon,
   Switch,
+  Text,
 } from '@chakra-ui/react'
 import useConnection from '../hooks/useConnection'
 import { BiUserCircle } from 'react-icons/bi'
 import { useStorken } from '@data/storken'
-
+import { GoLightBulb } from 'react-icons/go'
+import { IconType } from 'react-icons'
+import { FiSettings } from 'react-icons/fi'
+import { MdOutlineLanguage } from 'react-icons/md'
+import Link from 'next/link'
 export default function Nav() {
-  const { toggleColorMode } = useColorMode()
   const connection = useConnection()
   const [address, Address] = useStorken<string>('address')
-
+  const { toggleColorMode } = useColorMode()
   useEffect(() => {
     connection.connect()
     Address.set(connection.address)
@@ -75,7 +79,10 @@ export default function Nav() {
                         boxSize={10}
                       />
                     </MenuButton>
-                    <MenuList alignItems={'center'}>
+                    <MenuList
+                      alignItems={'center'}
+                      bg={useColorModeValue('light.200', 'dark.500')}
+                    >
                       <br />
                       <Center>
                         <Avatar size={'lg'} src="https://bit.ly/broken-link" />
@@ -88,14 +95,52 @@ export default function Nav() {
                       </Center>
                       <br />
                       <MenuDivider />
-                      <MenuItem>Profile</MenuItem>
-                      <MenuItem>Account Settings</MenuItem>
-                      <MenuItem gap={2} closeOnSelect={false}>
-                        Dark mode
+                      <MenuItem
+                        icon={<Icon as={BiUserCircle} fontSize={'20px'} />}
+                        color={useColorModeValue('dark.200', 'light.100')}
+                        closeOnSelect={true}
+                        w={'100%'}
+                        bg={useColorModeValue('light.200', 'dark.500')}
+                      >
+                        <Text fontSize={'md'} fontWeight={500}>
+                          Profile
+                        </Text>
+                      </MenuItem>
+                      <MenuItem
+                        icon={<Icon as={MdOutlineLanguage} fontSize={'20px'} />}
+                        color={useColorModeValue('dark.200', 'light.100')}
+                        closeOnSelect={true}
+                        w={'100%'}
+                        bg={useColorModeValue('light.200', 'dark.500')}
+                      >
+                        <Text fontSize={'md'} fontWeight={500}>
+                          Language
+                        </Text>
+                      </MenuItem>
+                      <MenuItem
+                        icon={<Icon as={FiSettings} fontSize={'20px'} />}
+                        color={'red'}
+                        closeOnSelect={true}
+                        w={'100%'}
+                        bg={useColorModeValue('light.200', 'dark.500')}
+                      >
+                        <Text fontSize={'md'} fontWeight={500}>
+                          Settings
+                        </Text>
+                      </MenuItem>
+                      <MenuItem
+                        closeOnSelect={false}
+                        color={useColorModeValue('dark.200', 'light.100')}
+                        bg={useColorModeValue('light.200', 'dark.500')}
+                        gap={3}
+                      >
+                        <Icon as={GoLightBulb} fontSize={'20px'} />
+                        <Text fontSize={'md'} fontWeight={500}>Dark Mode</Text>
                         <Switch
                           onChange={toggleColorMode}
                           size="md"
-                          colorScheme={'gray'}
+                          ml={2}
+                          colorScheme={'facebook'}
                         />
                       </MenuItem>
                     </MenuList>

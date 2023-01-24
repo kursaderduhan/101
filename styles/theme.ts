@@ -12,18 +12,18 @@ export const theme = extendTheme({
   config,
   colors: {
     dark: {
-      100: '#E3AA00', // tfb yellow
+      100: '#E3AA00', // yellow
       200: '#000000', // black
-      300: '#06141D', // background
-      400: '#1B2730', // main template color
-      500: '#1D3240', // repulse
-      600: '#0F222E', // header icon bg
+      300: '#06141D', 
+      400: '#1B2730', 
+      500: '#1D3240', 
+      600: '#0F222E', 
     },
     light: {
       100: '#FFFFFF', // white
-      200: '#FFFFFF', // off-white
-      300: '#fff4c7', // postButton
-      400: '#DEDEDE', // feet border color
+      200: '#CECECE', // off-white
+      300: '#fff4c7',
+      400: '#DEDEDE',
     },
   },
   textStyles: {
