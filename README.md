@@ -1,36 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+# Project 101
+<img src="https://101-phi.vercel.app/101.png" width="250px" h="300px" /> <br/>
+## Introduction
+#### **101** is a platform where you can draw and publish your own nft. 
 ## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
+#### This project has been deployed on the bsc-testnet network using the erc20, erc721 and erc1155 standards.<br/>
 ## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### You can start the project by withdrawing test tokens from the **Faucet** page to your wallet. <br/>
+#### You can buy the pen, eraser and brush items on the **paint** page with the test tokens you bought, or you can buy all the items with the buy all button below and draw your own nft in the paint field.<br/>
+#### We first upload the picture you have drawn with the save button on the Paint page to IPFS, this sometimes takes a long time, it is recommended to wait.<br/>
+#### You can create a metadata by filling in the name and description fields of your nft with the modal that opens and you can create your nft by pressing the create button. 
+## Browse website
+#### [101 website](https://101-phi.vercel.app/)
+## Notes
+#### The project is currently in the **testing** and **development** phase, so the market page is not active yet.
