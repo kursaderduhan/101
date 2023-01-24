@@ -1,0 +1,227 @@
+{
+   "abi": [
+      {
+         "inputs": [
+            {
+               "internalType": "address",
+               "name": "_yuzbirAddress",
+               "type": "address"
+            },
+            {
+               "internalType": "address",
+               "name": "_itemsAddress",
+               "type": "address"
+            },
+            {
+               "internalType": "address",
+               "name": "_nftAddress",
+               "type": "address"
+            }
+         ],
+         "stateMutability": "nonpayable",
+         "type": "constructor"
+      },
+      {
+         "inputs": [],
+         "name": "allBuyItem",
+         "outputs": [],
+         "stateMutability": "nonpayable",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "uint256",
+               "name": "_amount",
+               "type": "uint256"
+            }
+         ],
+         "name": "burn",
+         "outputs": [],
+         "stateMutability": "nonpayable",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "uint256",
+               "name": "_id",
+               "type": "uint256"
+            }
+         ],
+         "name": "buyItem",
+         "outputs": [],
+         "stateMutability": "nonpayable",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "bytes",
+               "name": "_json",
+               "type": "bytes"
+            }
+         ],
+         "name": "createNft",
+         "outputs": [],
+         "stateMutability": "nonpayable",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "address",
+               "name": "_userAddress",
+               "type": "address"
+            }
+         ],
+         "name": "faucet",
+         "outputs": [],
+         "stateMutability": "payable",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "name": "idToItems",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "ID",
+               "type": "uint256"
+            },
+            {
+               "internalType": "string",
+               "name": "name",
+               "type": "string"
+            },
+            {
+               "internalType": "uint256",
+               "name": "price",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "items",
+         "outputs": [
+            {
+               "internalType": "contract Items",
+               "name": "",
+               "type": "address"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "address",
+               "name": "",
+               "type": "address"
+            }
+         ],
+         "name": "lockTime",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "address",
+               "name": "_newOwner",
+               "type": "address"
+            }
+         ],
+         "name": "newOwner",
+         "outputs": [],
+         "stateMutability": "nonpayable",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "nft101",
+         "outputs": [
+            {
+               "internalType": "contract Nft101",
+               "name": "",
+               "type": "address"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "address",
+               "name": "_userBalance",
+               "type": "address"
+            }
+         ],
+         "name": "userBalance",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "address",
+               "name": "",
+               "type": "address"
+            }
+         ],
+         "name": "users",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "ID",
+               "type": "uint256"
+            },
+            {
+               "internalType": "address",
+               "name": "userAddress",
+               "type": "address"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "yuzbir",
+         "outputs": [
+            {
+               "internalType": "contract Yuzbir",
+               "name": "",
+               "type": "address"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      }
+   ]
+}

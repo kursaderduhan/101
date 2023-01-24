@@ -1,0 +1,75 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": false,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components": [
+        "components"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@data": [
+        "data"
+      ],
+      "@data/*": [
+        "data/*"
+      ],
+      "@pages": [
+        "pages"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@styles": [
+        "styles"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@public": [
+        "public"
+      ],
+      "@public/*": [
+        "public/*"
+      ],
+      "@hooks": [
+        "hooks"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ],
+      "metadata": [
+        "metadata"
+      ],
+      "metadata/*": [
+        "metadata/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx", "next.config.js" ]
+}
