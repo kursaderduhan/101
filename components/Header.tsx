@@ -111,7 +111,7 @@ export default function Nav() {
                         color={useColorModeValue('dark.200', 'light.100')}
                         closeOnSelect={true}
                         w={'100%'}
-                        bg={useColorModeValue('light.200', 'dark.500')}
+                        bg={useColorModeValue('light.200', 'dark.500')} isDisabled={true}
                       >
                         <Text fontSize={'md'} fontWeight={500}>
                           Language

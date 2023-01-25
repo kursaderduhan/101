@@ -11,6 +11,7 @@ import {
   useDisclosure,
   Image,
   VStack,
+  Badge,
 } from '@chakra-ui/react'
 import { FiHome, FiSettings, FiMenu } from 'react-icons/fi'
 import { FaFaucet, FaPaintBrush, FaShoppingBag } from 'react-icons/fa'
@@ -20,7 +21,7 @@ const LinkItems = [
   { name: 'Home', link: '/', icon: FiHome },
   { name: 'Faucet', link: '/Faucet', icon: FaFaucet },
   { name: 'Paint', link: '/Paint', icon: FaPaintBrush },
-  { name: 'Market', link: '/Market', icon: FaShoppingBag },
+  { name: 'Market', link: '/Market', icon: FaShoppingBag, badge: true },
   { name: 'Settings', link: '/Settings', icon: FiSettings },
 ]
 
@@ -72,9 +73,11 @@ const SidebarContent = ({ onClose, ...rest }: any) => {
         alignItems={'center'}
       >
         {LinkItems.map((item) => (
-          <NavItem key={item.name} icon={item.icon} link={item.link}>
-            {item.name}
-          </NavItem>
+          <>
+            <NavItem key={item.name} icon={item.icon} link={item.link} badge={item.badge}>
+              {item.name}
+            </NavItem>
+          </>
         ))}
       </Flex>
       <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
@@ -90,6 +93,7 @@ const NavItem = ({ icon, link, children, ...rest }: any) => {
       _focus={{ boxShadow: 'none' }}
       {...rest}
     >
+      {rest.badge ? <Badge ml={"30px"} pos={"absolute"} fontSize='10px' colorScheme={"orange"}>Coming soon</Badge> : null}
       <Flex
         alignItems="center"
         p={4}
