@@ -111,23 +111,26 @@ export default function Nav() {
                         color={useColorModeValue('dark.200', 'light.100')}
                         closeOnSelect={true}
                         w={'100%'}
-                        bg={useColorModeValue('light.200', 'dark.500')} isDisabled={true}
+                        bg={useColorModeValue('light.200', 'dark.500')}
+                        isDisabled={true}
                       >
                         <Text fontSize={'md'} fontWeight={500}>
                           Language
                         </Text>
                       </MenuItem>
-                      <MenuItem
-                        icon={<Icon as={FiSettings} fontSize={'20px'} />}
-                        color={'red'}
-                        closeOnSelect={true}
-                        w={'100%'}
-                        bg={useColorModeValue('light.200', 'dark.500')}
-                      >
-                        <Text fontSize={'md'} fontWeight={500}>
-                          Settings
-                        </Text>
-                      </MenuItem>
+                      <Link href={'/Settings'}>
+                        <MenuItem
+                          icon={<Icon as={FiSettings} fontSize={'20px'} />}
+                          color={'red'}
+                          closeOnSelect={true}
+                          w={'100%'}
+                          bg={useColorModeValue('light.200', 'dark.500')}
+                        >
+                          <Text fontSize={'md'} fontWeight={500}>
+                            Settings
+                          </Text>
+                        </MenuItem>
+                      </Link>
                       <MenuItem
                         closeOnSelect={false}
                         color={useColorModeValue('dark.200', 'light.100')}
@@ -135,7 +138,9 @@ export default function Nav() {
                         gap={3}
                       >
                         <Icon as={GoLightBulb} fontSize={'20px'} />
-                        <Text fontSize={'md'} fontWeight={500}>Dark Mode</Text>
+                        <Text fontSize={'md'} fontWeight={500}>
+                          Dark Mode
+                        </Text>
                         <Switch
                           onChange={toggleColorMode}
                           size="md"
