@@ -168,14 +168,8 @@
          "type": "function"
       },
       {
-         "inputs": [
-            {
-               "internalType": "address",
-               "name": "_userBalance",
-               "type": "address"
-            }
-         ],
-         "name": "userBalance",
+         "inputs": [],
+         "name": "totalCreateNft",
          "outputs": [
             {
                "internalType": "uint256",
@@ -190,21 +184,16 @@
          "inputs": [
             {
                "internalType": "address",
-               "name": "",
+               "name": "_userBalance",
                "type": "address"
             }
          ],
-         "name": "users",
+         "name": "userBalance",
          "outputs": [
             {
                "internalType": "uint256",
-               "name": "ID",
+               "name": "",
                "type": "uint256"
-            },
-            {
-               "internalType": "address",
-               "name": "userAddress",
-               "type": "address"
             }
          ],
          "stateMutability": "view",
