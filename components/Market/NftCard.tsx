@@ -3,7 +3,6 @@ import {
   VStack,
   Text,
   Image,
-  Button,
   Flex,
   Menu,
   MenuButton,

@@ -1,13 +1,10 @@
 import React, { memo } from 'react'
-import { Box, Flex, useColorModeValue, HStack, VStack } from '@chakra-ui/react'
+import { Box, Flex, useColorModeValue, VStack } from '@chakra-ui/react'
 import Head from 'next/head'
 import Sidebar from './Sidebar'
-// import useWindowSize from 'hooks/useWindowSize'
-// import screen from '../../constants'
 import Header from './Header'
 
 export const MyLayout = ({ children }: any) => {
-  //   const size: Size = useWindowSize()
 
   return (
     <Flex
@@ -36,7 +33,6 @@ export const MyLayout = ({ children }: any) => {
           </Box>
         </VStack>
       </Flex>
-      {/* {size.width! < screen.DESKTOP_SIZE && <BottomBar />} */}
     </Flex>
   )
 }
