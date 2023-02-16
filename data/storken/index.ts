@@ -17,7 +17,7 @@ export const [Storken, { useStorken }] = createStore({
     balance: 0 as number,
     url: '' as any,
     itemControl: 0 as number,
-    tokenAddress: '0xa3f73e8e4d53da35Db465Ed3F7DB093552A3DDB1' as any,
+    tokenAddress: '0xB4BA7258Fb2e5943628507823DBAd7B824909c65' as any,
     tokenBalance: '0' as string,
     nftName: '' as string,
     nftDescription: '' as string,
